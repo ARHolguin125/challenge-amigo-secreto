@@ -43,5 +43,6 @@ function sortearAmigo() {
         sorteo.innerHTML += "<li>No hay nombres en la lista</li>"; 
     } else {
         sorteo.innerHTML += `<li>El amigo sorteado es ${amigos[Math.floor(Math.random()*amigos.length)]}</li>`
+        document.getElementById("botonSortear").setAttribute("disabled", true); 
     }
 }
